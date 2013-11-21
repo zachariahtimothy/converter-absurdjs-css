@@ -5,8 +5,11 @@ var fs = require('fs');
 function parseCss(css) {
   var data = {};
   css = css.replace(/\n/g,'').replace(/\r/g, '').replace(/ /g,'');
-  var statements = css.split('{}');
-  console.log('statements: ', statements);
+  var classRegex = /\.([\w\d\.-]+)[^{}]*{[^}]*}/gim;
+  var idRegex = /#([\w\d\.-]+)[^{}]*{[^}]*}/gim;
+  var classes = classRegex.exec(css);
+  var ids = idRegex.exec(css);
+  console.log('classes: ', classes, '\nids: ', ids);
   return data;
 }
 
