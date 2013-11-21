@@ -1,0 +1,30 @@
+{
+  "name": "converter-absurdjs-css",
+  "version": "0.0.1",
+  "description": "Converts existing CSS into usable format (essentially JSON) for Absurd JS",
+  "main": "server.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "0.4"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zachariahtimothy/converter-absurdjs-css.git"
+  },
+  "keywords": [
+    "absurdjs",
+    "css",
+    "css",
+    "processor"
+  ],
+  "author": "Zach Curtis",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/zachariahtimothy/converter-absurdjs-css/issues"
+  },
+  "homepage": "https://github.com/zachariahtimothy/converter-absurdjs-css"
+}
