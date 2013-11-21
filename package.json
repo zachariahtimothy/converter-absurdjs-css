@@ -3,10 +3,15 @@
   "version": "0.0.1",
   "description": "Converts existing CSS into usable format (essentially JSON) for Absurd JS",
   "main": "server.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "0.4"
+    "grunt": "0.4",
+    "grunt-karma": "0.7",
+    "karma": "0.10",
+    "karma-jasmine": "0.1",
+    "load-grunt-tasks": "*",
+    "grunt-jasmine-node": "~0.1.0",
+    "jasmine-node": "~1.11.0"
   },
   "scripts": {
     "test": "grunt test"
