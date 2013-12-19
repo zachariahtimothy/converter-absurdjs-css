@@ -9,5 +9,5 @@ Zach Curtis
 * Blog: [a link](http://zachariahtimothy.wordpress.com "zachariahtimothy.wordpress.com")
 
 ##License:
-BSD [a relative link](LICENSE)
+BSD [LICENSE](LICENSE)
 
