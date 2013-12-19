@@ -1,6 +1,6 @@
 {
   "name": "css-to-absurd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "grunt-hapi": "~0.6.0"
   },
@@ -35,7 +35,7 @@
   "licenses": [
     {
       "type": "BSD",
-      "url": "http://github.com/spumko/hapi/raw/master/LICENSE"
+      "url": "https://github.com/zachariahtimothy/converter-absurdjs-css/blob/master/LICENSE"
     }
   ]
 }

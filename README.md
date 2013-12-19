@@ -8,7 +8,6 @@ Zach Curtis
 * Twitter: [a link](https://twitter.com/zachariahCurtis "@zachariahCurtis")
 * Blog: [a link](http://zachariahtimothy.wordpress.com "zachariahtimothy.wordpress.com")
 
-##License
-______________________
-BSD ([a relative link](LICENSE))
+##License:
+BSD [a relative link](LICENSE)
 
