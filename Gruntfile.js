@@ -368,6 +368,21 @@ module.exports = function (grunt) {
         ]);
     });
 
+    grunt.registerTask('build', [
+        'clean:dist',
+        'useminPrepare',
+        'concurrent:dist',
+        'autoprefixer',
+        'concat',
+        'cssmin',
+        'uglify',
+        'copy:dist',
+        'modernizr',
+        'rev',
+        'usemin',
+        'htmlmin'
+    ]);
+
     grunt.registerTask('default', [
         'newer:jshint',
         'test',

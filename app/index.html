@@ -30,22 +30,32 @@
         <div class="container">
             <div class="header">
                 <h3 class="text-muted">CSS to AbsurdJS Converter</h3>
+                <ul class="nav nav-pills">
+                    <li><a href="mailto:zachariahtimothy@gmail.com?subject=CSS To AbsurdJS Converter" target="_blank">Email Me</a></li>
+                    <li><a href="https://twitter.com/zachariahCurtis" target="_blank">Tweet Me</a></li>
+                </ul>
             </div>
-            <div class="jumbotron">
-                <p class="">If you love <a href="https://github.com/krasimir/absurd" target="_blank">AbsurdJS</a> and already have a bunch of CSS written, this converter can help.  Just upload the CSS file you wish to convert, then copy/paste it into a javascript file for importing into </p>
-                <p>First, Upload the file you want to convert</p>
-                <form id="uploadForm" class="form" method="post" enctype="multipart/form-data" action="/upload" role="form">
-                    <div class="form-group">
-                        <input type="file" class="form-control" name="uploadFile" required="required" />
-                    </div> 
-                    <div class="form-group">
-                        <label>Tab Spacing</label>
-                        <input type="text" class="form-control" name="tabSpace" value="4">
-                    </div>
-                    <button type="submit" class="btn btn-lg">Upload</button>
-                </form>
+            <p class="">If you love <a href="https://github.com/krasimir/absurd" target="_blank">AbsurdJS</a> and already have a bunch of CSS written, this converter can help.  Just upload the CSS file you wish to convert, then copy/paste it into a javascript file for importing into </p>
+            <div class="panel panel-default panel-1">
+                <div class="panel-heading">Upload CSS File</div>
+                <div class="panel-body">
+                    <p>First, Upload the file you want to convert</p>
+                    <form id="uploadForm" class="form" method="post" enctype="multipart/form-data" action="/upload" role="form">
+                        <div class="form-group">
+                            <input type="file" class="form-control" name="uploadFile" required="required" />
+                        </div> 
+                        <!-- <div class="form-group">
+                            <label>Tab Spacing</label>
+                            <input type="text" class="form-control" name="tabSpace" value="4">
+                        </div> -->
+                        <button type="submit" class="btn btn-lg">Upload</button>
+                    </form>
+                </div>
             </div>
-            <div id="message"><pre class="default prettyprint"><code></code></pre></div>
+            <div class="panel panel-default panel-2">
+                <div class="panel-heading">Output</div>
+                <div id="message" class="panel-body"><pre class="default prettyprint"><code></code></pre></div>
+            </div>
             <div class="footer">
                 <p>&copy; Zach Curtis, Forward Motion Consulting </p>
             </div>

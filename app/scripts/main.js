@@ -57,16 +57,20 @@ var CssToAbsurd = {
                     data: {css: JSON.stringify(parsedCss) },
                     success: function (data) {
                         var code = "";
-                        Object.keys(data).forEach(function (key, i) {
+                        var keys = Object.keys(data);
+
+                        keys.forEach(function (key, i) {
                             var rule = JSON.stringify(data[key]);
                             key = key.replace(/"/g, "'");
                             var ruleString = rule.replace(/{/g, '{\n     ').replace(/}/g, '\n}');
                             //TODO: Find rule comma's only and split line
                             if (i > 0) { code += "\n"; }
-                            code += '"' + key + '": ' + ruleString + ',';
+                            code += '"' + key + '": ' + ruleString;
+                            if (i < keys.length-1){ code += ','; }
                         });
                         $('#message pre code').html(code);
                         prettyPrint();
+                        $('.panel-2').click();
                     },
                     error: function (error) {
                         $('#message').html(error);
@@ -83,5 +87,11 @@ $(function () {
     $('#uploadForm').submit(function (event) {
         event.preventDefault();
         CssToAbsurd.sendFormFromHTML(this);
+    });
+
+    var $panels = $('.panel');
+    $panels.on('click', function (event) {
+        $panels.not(this).find('.panel-body').slideUp('fast');
+        $(this).find('.panel-body').slideDown('fast');
     });
 });

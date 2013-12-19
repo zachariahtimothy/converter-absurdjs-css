@@ -67,6 +67,10 @@ body {
     margin-top: 28px;
 }
 
+.panel-2 .panel-body {
+    display:none;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {

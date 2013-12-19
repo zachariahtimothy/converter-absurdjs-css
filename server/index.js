@@ -1,9 +1,10 @@
 var Hapi = require('hapi');
-var Fs = require('fs');
 var path = require('path');
+var config = require('./config');
 
+// port: 22955
 // Create a server with a host, port, and options
-var server = new Hapi.Server('localhost', 8080);
+var server = new Hapi.Server(config.hostName, config.hostPort);
 
 // Add the route
 server.route({
