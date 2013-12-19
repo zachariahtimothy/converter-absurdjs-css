@@ -31,5 +31,11 @@
   },
   "engines": {
     "node": ">=0.8.0"
-  }
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "http://github.com/spumko/hapi/raw/master/LICENSE"
+    }
+  ]
 }
