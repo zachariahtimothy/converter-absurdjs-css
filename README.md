@@ -5,8 +5,8 @@ Converter for migrating existing CSS into Absurd JS format for those who want to
 
 ##Author
 **Zach Curtis**
-* Twitter: [a link](https://twitter.com/zachariahCurtis "@zachariahCurtis")
-* Blog: [a link](http://zachariahtimothy.wordpress.com "zachariahtimothy.wordpress.com")
+* Twitter: [https://twitter.com/zachariahCurtis](@zachariahCurtis)
+* Blog: [http://zachariahtimothy.wordpress.com](zachariahtimothy.wordpress.com)
 
 ##License
 BSD ([LICENSE](LICENSE))
