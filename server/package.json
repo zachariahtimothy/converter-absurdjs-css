@@ -1,0 +1,14 @@
+{
+  "name": "cssAbsurdServer",
+  "version": "0.0.0",
+  "description": "API services to save absurdified CSS files",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "hapi": "~1.20.0"
+  }
+}

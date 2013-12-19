@@ -1,0 +1,11 @@
+{
+  "name": "css-to-absurd",
+  "private": true,
+  "dependencies": {
+    "sass-bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "json3": "~3.2.6"
+  },
+  "devDependencies": {}
+}
