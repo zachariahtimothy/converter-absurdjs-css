@@ -5,7 +5,8 @@
     "sass-bootstrap": "~3.0.0",
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
-    "json3": "~3.2.6"
+    "json3": "~3.2.6",
+    "jquery-zeroclipboard": "~1.0.0"
   },
   "devDependencies": {}
 }

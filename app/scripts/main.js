@@ -9,7 +9,9 @@ var utilities = {
         var len = blocks.length;
         for (var i = 0; i < len; i++) {
             var pair = blocks[i].split('{');
-            rules[$.trim(pair[0])] = this.parseCSSBlock(pair[1]);
+            if (pair.length > 1){
+                rules[$.trim(pair[0])] = this.parseCSSBlock(pair[1]);
+            }
         }
         return rules;
     },
@@ -69,7 +71,7 @@ var CssToAbsurd = {
                             if (i < keys.length-1){ code += ','; }
                         });
                         $('#message pre code').html(code);
-                        prettyPrint();
+                        
                         $('.panel-2').click();
                     },
                     error: function (error) {
@@ -93,5 +95,30 @@ $(function () {
     $panels.on('click', function (event) {
         $panels.not(this).find('.panel-body').slideUp('fast');
         $(this).find('.panel-body').slideDown('fast');
+
     });
+
+    $.zeroclipboard({
+        moviePath: '/bower_components/zeroclipboard/ZeroClipboard.swf',
+        activeClass: 'active',
+        hoverClass: 'hover'
+    });
+
+    $('.copy-to-clipboard').zeroclipboard({
+        dataRequested: function (event, setText) {
+            // In order to dynamically set the text to copy to the clipboard
+            // at the time the mouse clicks the button
+            // NOTE: this function is called within the execution context of the flash movie,
+            // therefore any exception might be silently ignored.
+            // NOTE 2: the function "setText" should be called during the execution of this
+            // callback otherwise the text copied on the clipboard will not be correct.
+            // Therefore any AJAX call should be configured to be SYNCHRONOUS
+            setText($('#message pre code').text());
+        },
+        complete: function () {
+            $('#message button').after('<span class="well well-sm">AbsurdJS styles copied to clipboard!</span>');
+        }
+    });
+
+    prettyPrint();
 });

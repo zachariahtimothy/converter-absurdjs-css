@@ -71,6 +71,13 @@ body {
     display:none;
 }
 
+pre.prettyprint{
+    padding:5px;
+    margin-top:5px;
+}
+
+#message .well{ margin-left:10px; }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
